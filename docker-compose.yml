@@ -1,0 +1,17 @@
+version: "3.3"
+services:
+  jenkins:
+    user: root
+    image: "jenkinsci/blueocean:latest"
+    ports:
+      - "8080:8080"
+      - "8443:8443"
+    volumes:
+      - "jenkins_data:/var/jenkins_home"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+    environment:
+      - "JENKINS_OPTS=--httpPort=8080 --httpsPort=8443"
+volumes:
+  jenkins_data:
+    driver: local
