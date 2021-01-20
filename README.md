@@ -4,6 +4,7 @@ This repo contains the docker-compose.yml for our software validation project. T
 ## Pre-requisitions
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
+- At least 6GB of memory assigned to Docker
 
 ## Installation
 ### Configure Docker containers
