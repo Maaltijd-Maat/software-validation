@@ -1,1 +1,2 @@
 cucumber-reports:5.4.0
+sonar:2.13
